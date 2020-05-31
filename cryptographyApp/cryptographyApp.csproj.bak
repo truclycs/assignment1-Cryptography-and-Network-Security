@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E55781E-72CC-4329-A4E0-E77E13A3A7B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DXApplication1</RootNamespace>
+    <AssemblyName>DXApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\..\..\..\Downloads\KHMT\HK6\MMANM\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v18.2" />
+    <Reference Include="DevExpress.Data.v18.2" />
+    <Reference Include="DevExpress.Dialogs.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.2.Core" />
+    <Reference Include="DevExpress.Utils.v18.2" />
+    <Reference Include="DevExpress.XtraBars.v18.2" />
+    <Reference Include="DevExpress.Sparkline.v18.2.Core" />
+    <Reference Include="DevExpress.XtraDialogs.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="NTRUEngine">
+      <HintPath>..\..\..\..\Desktop\foo\foo\NTRU-NET\bin\Release\NTRUEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cryptography.cs" />
+    <Compile Include="DESForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DESForm.Designer.cs">
+      <DependentUpon>DESForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ECDSAForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ECDSAForm.Designer.cs">
+      <DependentUpon>ECDSAForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElgamalForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ElgamalForm.Designer.cs">
+      <DependentUpon>ElgamalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELGSCForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ELGSCForm.Designer.cs">
+      <DependentUpon>ELGSCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD5Form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MD5Form.Designer.cs">
+      <DependentUpon>MD5Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NTRUForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NTRUForm.Designer.cs">
+      <DependentUpon>NTRUForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RSAForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RSAForm.Designer.cs">
+      <DependentUpon>RSAForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHA1Form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SHA1Form.Designer.cs">
+      <DependentUpon>SHA1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHA256Form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SHA256Form.Designer.cs">
+      <DependentUpon>SHA256Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHA384Form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SHA384Form.Designer.cs">
+      <DependentUpon>SHA384Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHA512Form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SHA512Form.Designer.cs">
+      <DependentUpon>SHA512Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TripDESForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TripDESForm.Designer.cs">
+      <DependentUpon>TripDESForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility.cs" />
+    <Compile Include="AESForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AESForm.Designer.cs">
+      <DependentUpon>AESForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AESForm.resx">
+      <DependentUpon>AESForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DESForm.resx">
+      <DependentUpon>DESForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ECDSAForm.resx">
+      <DependentUpon>ECDSAForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElgamalForm.resx">
+      <DependentUpon>ElgamalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELGSCForm.resx">
+      <DependentUpon>ELGSCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD5Form.resx">
+      <DependentUpon>MD5Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NTRUForm.resx">
+      <DependentUpon>NTRUForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RSAForm.resx">
+      <DependentUpon>RSAForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHA1Form.resx">
+      <DependentUpon>SHA1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHA256Form.resx">
+      <DependentUpon>SHA256Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHA384Form.resx">
+      <DependentUpon>SHA384Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHA512Form.resx">
+      <DependentUpon>SHA512Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TripDESForm.resx">
+      <DependentUpon>TripDESForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25750254255_4b4f7ba70d_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Juggernaut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dota2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e2.jpg" />
+    <None Include="Resources\e1.jpg" />
+    <Content Include="Resources\g1.jpg" />
+    <Content Include="Resources\g11.jpg" />
+    <None Include="Resources\w6.jpg" />
+    <None Include="Resources\w5.jpg" />
+    <None Include="Resources\w4.jpg" />
+    <None Include="Resources\w3.jpg" />
+    <None Include="Resources\w2.jpg" />
+    <None Include="Resources\w1.jpg" />
+    <None Include="Resources\q5.jpg" />
+    <None Include="Resources\q4.jpg" />
+    <None Include="Resources\q3.jpg" />
+    <None Include="Resources\q2.jpg" />
+    <None Include="Resources\q1.jpg" />
+    <None Include="Resources\g3.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
